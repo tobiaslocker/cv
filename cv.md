@@ -46,11 +46,6 @@ scalable software.
 
 *Frankfurt University of Applied Sciences*
 
-#### Earlier Technical Formation
-
-Completed initial training as an electrician and master craftsman. 
-Continuously expanded expertise in AI, machine learning, and modern software 
-practices through online courses and self-directed projects.
 ---
 
 ## Experience
