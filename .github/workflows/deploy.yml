@@ -1,0 +1,15 @@
+name: Build and Deploy CV
+
+on:
+  push:
+    branches: [main]
+  release:
+    types: [published]
+
+jobs:
+  build-deploy:
+    uses: tobiaslocker/docframe/.github/workflows/default.yml@main
+    with:
+      md_file: cv.md
+      metadata_file: metadata.yaml
+      output_name: cv
