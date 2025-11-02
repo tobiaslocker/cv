@@ -111,7 +111,8 @@ measurement systems, and product certification processes.
 Worked in industrial and building installations, developing a solid technical foundation and
 practical understanding of electrical systems.
 
-`2000–2004` **Vocational Training as Electrician**  
+`2000–2004` **Vocational Training as Electrician**
+
 *Elektro Team Krause GmbH*, Bad Homburg, Germany
 
 Completed formal apprenticeship as an electrician, combining vocational education with
