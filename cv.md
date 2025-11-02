@@ -42,7 +42,8 @@ scalable software.
 
 ## Education
 
-`2009–2014` **B. Eng., Electrical Engineering & IT**  
+`2009–2014` **B. Eng., Electrical Engineering & IT**
+
 *Frankfurt University of Applied Sciences*
 
 Earlier technical formation as electrician and master craftsman. Continuously expanded
@@ -53,7 +54,8 @@ self-directed projects.
 
 ## Experience
 
-`2022–2024` **Senior Staff Engineer / Software Architect**  
+`2022–2024` **Senior Staff Engineer / Software Architect**
+
 *Infineon Technologies AG*, *Design In Tools for Automotive Body Power*, Munich, Germany
 
 Led modernization of complex design-in tools, transforming legacy C++/Qt applications into
@@ -62,7 +64,8 @@ Python interfaces for Qt widgets and integrated them with C++ for seamless commu
 Established architecture documentation practices based on arc42 and C4 in a docs-as-code
 CI-driven workflow, fostering efficient processes and software best practices.
 
-`2019–2022` **Software Architect / Software Developer / Quantitative Analyst**  
+`2019–2022` **Software Architect / Software Developer / Quantitative Analyst**
+
 *PEH Wertpapier AG*, *Asset Management*, Frankfurt, Germany
 
 Redesigned a technical scoring system into a scalable, containerized web application. Mentored
@@ -71,7 +74,8 @@ between backend computation and a responsive frontend, leveraging Python to orch
 numerical computations via a high-performance C library. Improved performance, scalability,
 and usability for portfolio analysis. The application remains actively used and maintained.
 
-`2017–2019` **Software Engineer**  
+`2017–2019` **Software Engineer**
+
 *Device Insight GmbH*, *Product Development*, Munich, Germany
 
 Contributed to the design and development of an edge computing platform enabling reliable
@@ -82,7 +86,8 @@ supporting streamlined delivery pipelines. The role combined hands-on engineerin
 architectural responsibilities, spanning technologies from container orchestration to classic
 Unix/Linux tooling.
 
-`2014–2017` **Engineering Consultant / Senior Engineering Consultant**  
+`2014–2017` **Engineering Consultant / Senior Engineering Consultant**
+
 *Alten Engineering GmbH*, Munich, Germany
 
 Worked as a software engineer and consultant for automotive and semiconductor clients,
@@ -92,13 +97,15 @@ and testing environments. Navigated complex requirements and balanced implementa
 pragmatism with software quality — lessons that strongly influenced later architectural
 decisions.
 
-`2011–2013` **Working Student**  
+`2011–2013` **Working Student**
+
 *VDE Testing Facility*, Offenbach am Main, Germany
 
 Assisted in EMC and acoustic testing, gaining early exposure to standardized test procedures,
 measurement systems, and product certification processes.
 
-`2004–2008` **Electrician**  
+`2004–2008` **Electrician**
+
 *MS Elektrotechnik*, Friedrichsdorf, Germany
 
 Worked in industrial and building installations, developing a solid technical foundation and
