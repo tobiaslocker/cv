@@ -20,6 +20,9 @@ jobs:
       run: |
         mkdir -p build
         pandoc cv.md -o build/index.html --template=template.html
+        
+    - name: Copy styles
+      run: cp -r styles build/
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
