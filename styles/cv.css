@@ -1,18 +1,23 @@
 /* cv.css */
 
-body {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: Avenir, Verdana, sans-serif;
     font-size: 12pt;
     line-height: 1.5;
-    margin: 0;
-    padding: 2em 1em;
     background: #fff;
     color: #222;
+    display: flex;
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering */
 }
 
 .container {
     max-width: 90ch;   /* roughly 90 characters per line */
-    margin: 0 auto;     /* center horizontally */
+    padding: 2em 1em;
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4 {
