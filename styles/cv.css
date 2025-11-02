@@ -1,48 +1,59 @@
-/* Base body styling */
+/* ===== CV Base Styles ===== */
+
+/* Default color variables (Solarized Light by default) */
+:root {
+    --bg: #fdf6e3;
+    --text: #657b83;
+    --heading: #586e75;
+    --rule: #eee8d5;
+    --link: #268bd2;
+}
+
+/* ===== Body ===== */
 body {
     font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
     font-size: 12pt;
     line-height: 1.5;
     margin: 0;
     padding: 2em 1em;
-    background-color: #fdf6e3; /* Solarized Light background */
-    color: #657b83; /* Solarized base00 text color */
+    background-color: var(--bg);
+    color: var(--text);
 }
 
-/* Container to limit width and center */
+/* ===== Layout Container ===== */
 .container {
-    max-width: 800px; /* around 80–100 cols */
-    margin: 0 auto;   /* center horizontally */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* Headings */
+/* ===== Headings ===== */
 h1, h2, h3, h4 {
     font-weight: 400;
     margin-top: 1em;
     margin-bottom: 0.5em;
-    color: #586e75; /* Solarized base01 for headings */
+    color: var(--heading);
 }
 
-/* Paragraphs and lists */
+/* ===== Paragraphs & Lists ===== */
 p, li {
     margin-bottom: 0.5em;
 }
 
-/* Lists */
+/* ===== Lists ===== */
 ul {
     padding-left: 1.25em;
 }
 
-/* Optional: subtle horizontal rules */
+/* ===== Horizontal Rules ===== */
 hr {
     border: none;
-    border-top: 1px solid #eee8d5;
+    border-top: 1px solid var(--rule);
     margin: 1em 0;
 }
 
-/* Optional: links in Solarized blue */
+/* ===== Links ===== */
 a {
-    color: #268bd2;
+    color: var(--link);
     text-decoration: none;
 }
 
