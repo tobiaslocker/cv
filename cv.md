@@ -49,7 +49,8 @@ scalable software.
 #### Earlier Technical Formation
 
 Completed initial training as an electrician and master craftsman. Continuously expanded
-expertise in AI, machine learning, and modern software practices.
+expertise in machine learning and modern software practices through online courses,
+hands-on projects, and independent study of books and technical literature.
 
 ---
 
