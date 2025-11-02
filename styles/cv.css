@@ -1,29 +1,30 @@
-/* cv.css */
+/* Nerdy terminal-style CV */
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: Avenir, Verdana, sans-serif;
+body {
+    font-family: "Fira Code", "Source Code Pro", "Courier New", monospace;
     font-size: 12pt;
     line-height: 1.5;
-    background: #fff;
-    color: #222;
-    display: flex;
-    justify-content: center;  /* horizontal centering */
-    align-items: center;      /* vertical centering */
+    margin: 0;
+    padding: 2em 1em;
+    background-color: #121212; /* dark terminal background */
+    color: #d4d4d4;            /* light gray text */
 }
 
 .container {
-    max-width: 90ch;   /* roughly 90 characters per line */
-    padding: 2em 1em;
-    box-sizing: border-box;
+    max-width: 80ch;           /* ~80 characters per line */
+    margin: 3em auto;          /* center horizontally, add vertical spacing */
+    padding: 2em;
+    border: 1px solid #444;    /* subtle border like a terminal window */
+    border-radius: 6px;
+    background-color: #1e1e1e; /* container slightly darker than page */
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 h1, h2, h3, h4 {
     font-weight: 400;
     margin-top: 1em;
     margin-bottom: 0.5em;
+    color: #00ff00;            /* classic green terminal headers */
 }
 
 p, li {
@@ -32,4 +33,35 @@ p, li {
 
 ul {
     padding-left: 1.25em;
+}
+
+/* Links and icons */
+a {
+    color: #0af;               /* bright cyan links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Code style for tech / skills */
+code {
+    background-color: #222;
+    color: #ffcc00;
+    padding: 0.1em 0.3em;
+    border-radius: 2px;
+    font-family: "Fira Code", monospace;
+}
+
+/* Optional separator lines */
+hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 1.5em 0;
+}
+
+/* GitHub icon spacing */
+.fa-github {
+    margin-right: 0.3em;
 }
