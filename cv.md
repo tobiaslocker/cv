@@ -42,7 +42,8 @@ scalable software.
 
 ## Education
 
-`2009–2014` **B. Eng., Electrical Engineering & IT**  
+`2009–2014`
+**B. Eng., Electrical Engineering & IT**  
 *Frankfurt University of Applied Sciences*
 
 Earlier technical formation as electrician and master craftsman. Continuously expanded
