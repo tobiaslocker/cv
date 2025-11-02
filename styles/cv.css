@@ -8,7 +8,7 @@ body {
     color: #222;
 }
 
-#container {
+.container {
     max-width: 800px; /* limit width */
     margin: 0 auto;   /* center horizontally */
 }
