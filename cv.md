@@ -54,7 +54,7 @@ self-directed projects.
 
 ## Experience
 
-`2022–2024` **Senior Staff Engineer / Software Architect**
+### `2022–2024` **Senior Staff Engineer / Software Architect**
 
 *Infineon Technologies AG*, *Design In Tools for Automotive Body Power*, Munich, Germany
 
