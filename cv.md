@@ -43,6 +43,7 @@ scalable software.
 ## Education
 
 `2009–2014`
+
 **B. Eng., Electrical Engineering & IT**  
 *Frankfurt University of Applied Sciences*
 
