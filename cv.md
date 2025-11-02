@@ -64,6 +64,7 @@ Python interfaces for Qt widgets and integrated them with C++ for seamless commu
 Established architecture documentation practices based on arc42 and C4 in a docs-as-code
 CI-driven workflow, fostering efficient processes and software best practices.
 
+
 `2019–2022` **Software Architect / Software Developer / Quantitative Analyst**
 
 *PEH Wertpapier AG*, *Asset Management*, Frankfurt, Germany
@@ -73,6 +74,7 @@ colleagues and established modern development practices. Implemented a clean sep
 between backend computation and a responsive frontend, leveraging Python to orchestrate
 numerical computations via a high-performance C library. Improved performance, scalability,
 and usability for portfolio analysis. The application remains actively used and maintained.
+
 
 `2017–2019` **Software Engineer**
 
@@ -86,6 +88,7 @@ supporting streamlined delivery pipelines. The role combined hands-on engineerin
 architectural responsibilities, spanning technologies from container orchestration to classic
 Unix/Linux tooling.
 
+
 `2014–2017` **Engineering Consultant / Senior Engineering Consultant**
 
 *Alten Engineering GmbH*, Munich, Germany
@@ -97,6 +100,7 @@ and testing environments. Navigated complex requirements and balanced implementa
 pragmatism with software quality — lessons that strongly influenced later architectural
 decisions.
 
+
 `2011–2013` **Working Student**
 
 *VDE Testing Facility*, Offenbach am Main, Germany
@@ -104,12 +108,14 @@ decisions.
 Assisted in EMC and acoustic testing, gaining early exposure to standardized test procedures,
 measurement systems, and product certification processes.
 
+
 `2004–2008` **Electrician**
 
 *MS Elektrotechnik*, Friedrichsdorf, Germany
 
 Worked in industrial and building installations, developing a solid technical foundation and
 practical understanding of electrical systems.
+
 
 `2000–2004` **Vocational Training as Electrician**
 
