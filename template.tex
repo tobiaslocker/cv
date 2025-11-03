@@ -1,0 +1,22 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontawesome5}
+\usepackage{needspace}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\newcommand{\email}[1]{\faEnvelope~#1}
+\newcommand{\github}[1]{\faGithub~#1}
+
+\title{\VAR{title}}
+\begin{document}
+\maketitle
+
+\noindent
+\email{\VAR{email}} \\
+\github{\VAR{github}}
+
+\section*{Experience}
+
+$body$  % Pandoc will inject Markdown content converted to LaTeX
+
+\end{document}
