@@ -1,31 +1,5 @@
----
-title: Tobias Locker – Software Architect & Developer
-header-includes:
-  - \usepackage{fontawesome5}
-  - \usepackage{hyperref}
----
 # Tobias Locker
 Software Architect · Senior Software Developer · Electrical Engineer
-
-<!-- HTML version -->
-```{=html}
-<div id="webaddress">
-  <a href="mailto:tobias@tobiaslocker.de">
-    <i class="far fa-envelope"></i> tobias@tobiaslocker.de
-  </a>
-  <a href="https://github.com/tobiaslocker">
-    <i class="fab fa-github"></i> tobiaslocker
-  </a>
-</div>
-```
-
-<!-- LaTeX version -->
-```{=latex}
-\begin{center}
-  \faEnvelope\ \href{mailto:tobias@tobiaslocker.de}{tobias@tobiaslocker.de} \quad
-  \faGithub\ \href{https://github.com/tobiaslocker}{tobiaslocker}
-\end{center}
-```
 
 ## About Me
 Software architect with experience across IoT, finance, and semiconductor domains.
@@ -90,9 +64,7 @@ between backend computation and a responsive frontend, leveraging Python to orch
 numerical computations via a high-performance C library. Improved performance, scalability,
 and usability for portfolio analysis. The application remains actively used and maintained.
 
-```{=latex}
-\needspace{8\baselineskip}
-```
+
 ### `2017–2019` **Software Engineer**
 
 *Device Insight GmbH*, *Product Development*, Munich, Germany
