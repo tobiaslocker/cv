@@ -61,8 +61,10 @@ hands-on projects, and independent study of books and technical literature.
 *Infineon Technologies AG*, *Design In Tools for Automotive Body Power*, Munich, Germany
 
 Led modernization of complex design-in tools, transforming legacy C++/Qt applications into
-modular, maintainable systems. Collaborated with global teams to align designs, designed
-Python interfaces for Qt widgets and integrated them with C++ for seamless communication.
+modular, maintainable systems. Collaborated with global teams to align designs on company level.
+Drove the adoption of a unified build system, package management, and documentation across
+multiple products, enabling reusable C++ components with Python bindings and providing
+seamless integration for scripting and communication between both languages.
 Established architecture documentation practices based on arc42 and C4 in a docs-as-code
 CI-driven workflow, fostering efficient processes and software best practices.
 
