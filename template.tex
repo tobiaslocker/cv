@@ -1,23 +1,22 @@
-\documentclass[11pt,a4paper]{article}
-\usepackage{geometry}
-\geometry{margin=1in}
+\documentclass[11pt,a4paper,sans]{moderncv}
 
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\usepackage[scale=0.9]{geometry}
 \usepackage{fontawesome5}
-\usepackage{needspace}
-\usepackage{hyperref}
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setlength{\hintscolumnwidth}{3cm}
 
-\newcommand{\email}[1]{\faEnvelope~#1}
-\newcommand{\github}[1]{\faGithub~#1}
-
+% personal data
+\name{$name$}{}
 \title{$title$}
-\begin{document}
-\maketitle
+\email{\faEnvelope~$email$}
+\phone[mobile]{\faMobile~$phone$}
+\social[github]{\faGithub~$github$}
+\address{$address$}{}
 
-\noindent
-\email{$email$} \\
-\github{$github$}
+\begin{document}
+\makecvtitle
 
 $body$
 
