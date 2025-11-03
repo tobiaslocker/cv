@@ -27,7 +27,7 @@ scalable software.
 
 ## Education
 
-### `2009–2014` **B. Eng., Electrical Engineering & IT**
+### 2009–2014 — B. Eng., Electrical Engineering & IT
 
 *Frankfurt University of Applied Sciences*
 
@@ -41,7 +41,7 @@ hands-on projects, and independent study of books and technical literature.
 
 ## Experience
 
-### `2022–2024` **Senior Staff Engineer / Software Architect**
+### 2022–2024 — Senior Staff Engineer / Software Architect
 
 *Infineon Technologies AG*, *Design In Tools for Automotive Body Power*, Munich, Germany
 
@@ -54,7 +54,7 @@ Established architecture documentation practices based on arc42 and C4 in a docs
 CI-driven workflow, fostering efficient processes and software best practices.
 
 
-### `2019–2022` **Software Architect / Software Developer / Quantitative Analyst**
+### 2019–2022 — Software Architect / Software Developer / Quantitative Analyst
 
 *PEH Wertpapier AG*, *Asset Management*, Frankfurt, Germany
 
@@ -65,7 +65,7 @@ numerical computations via a high-performance C library. Improved performance, s
 and usability for portfolio analysis. The application remains actively used and maintained.
 
 
-### `2017–2019` **Software Engineer**
+### 2017–2019 — Software Engineer
 
 *Device Insight GmbH*, *Product Development*, Munich, Germany
 
@@ -78,7 +78,7 @@ architectural responsibilities, spanning technologies from container orchestrati
 Unix/Linux tooling.
 
 
-### `2014–2017` **Engineering Consultant / Senior Engineering Consultant**
+### 2014–2017 — Engineering Consultant / Senior Engineering Consultant
 
 *Alten Engineering GmbH*, Munich, Germany
 
@@ -90,7 +90,7 @@ pragmatism with software quality — lessons that strongly influenced later arch
 decisions.
 
 
-### `2011–2013` **Working Student**
+### 2011–2013 — Working Student
 
 *VDE Testing Facility*, Offenbach am Main, Germany
 
@@ -98,7 +98,7 @@ Assisted in EMC and acoustic testing, gaining early exposure to standardized tes
 measurement systems, and product certification processes.
 
 
-### `2004–2008` **Electrician**
+### 2004–2008 — Electrician
 
 *MS Elektrotechnik*, Friedrichsdorf, Germany
 
@@ -106,7 +106,7 @@ Worked in industrial and building installations, developing a solid technical fo
 practical understanding of electrical systems.
 
 
-### `2000–2004` **Vocational Training as Electrician**
+### 2000–2004 — Vocational Training as Electrician
 
 *Elektro Team Krause GmbH*, Bad Homburg, Germany
 
