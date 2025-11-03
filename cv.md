@@ -90,7 +90,9 @@ between backend computation and a responsive frontend, leveraging Python to orch
 numerical computations via a high-performance C library. Improved performance, scalability,
 and usability for portfolio analysis. The application remains actively used and maintained.
 
-
+```{=latex}
+\needspace{8\baselineskip}
+```
 ### `2017–2019` **Software Engineer**
 
 *Device Insight GmbH*, *Product Development*, Munich, Germany
