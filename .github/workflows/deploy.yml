@@ -17,18 +17,13 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y pandoc texlive-xetex texlive-fonts-extra
-
-
-    - name: Convert Markdown to HTML
-      run: |
-        mkdir -p build
-        pandoc cv.md -o build/index.html --template=template.html
         
+    - name: Convert Markdown to HTML
+      run: pandoc cv.md -o build/index.html --template=template.html --metadata-file=metadata.yaml
+    
     - name: Convert Markdown to PDF
-      run: |
-        mkdir -p build/pdf
-        pandoc cv.md -o build/pdf/cv.pdf --pdf-engine=xelatex
-
+      run: pandoc cv.md -o build/cv.pdf --template=template.tex --metadata-file=metadata.yaml --pdf-engine=xelatex
+      
     - name: Copy styles
       run: cp -r styles build/
 
