@@ -7,16 +7,13 @@
 \newcommand{\email}[1]{\faEnvelope~#1}
 \newcommand{\github}[1]{\faGithub~#1}
 
-\title{\VAR{title}}
+\title{$title$}
 \begin{document}
 \maketitle
 
 \noindent
-\email{\VAR{email}} \\
-\github{\VAR{github}}
+\email{$email$} \\
+\github{$github$}
 
-\section*{Experience}
-
-$body$  % Pandoc will inject Markdown content converted to LaTeX
-
+$body$
 \end{document}
