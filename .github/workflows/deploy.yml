@@ -41,4 +41,4 @@ jobs:
       uses: actions/upload-artifact@v5
       with:
         name: cv-pdf
-        path: build/pdf/cv.pdf
+        path: build/cv.pdf
