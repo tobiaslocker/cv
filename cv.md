@@ -1,11 +1,15 @@
 ---
-layout: cv
 title: Tobias Locker – Software Architect & Developer
+header-includes:
+  - \usepackage{fontawesome5}
+  - \usepackage{hyperref}
 ---
 
 # Tobias Locker
 Software Architect · Senior Software Developer · Electrical Engineer
 
+<!-- HTML-only version -->
+::: {.html}
 <div id="webaddress">
   <a href="mailto:tobias@tobiaslocker.de">
     <i class="far fa-envelope"></i> tobias@tobiaslocker.de
@@ -14,9 +18,17 @@ Software Architect · Senior Software Developer · Electrical Engineer
     <i class="fab fa-github"></i> tobiaslocker
   </a>
 </div>
+:::
+
+<!-- LaTeX-only version -->
+::: {.latex}
+\begin{center}
+  \faEnvelope\ \href{mailto:tobias@tobiaslocker.de}{tobias@tobiaslocker.de} \quad
+  \faGithub\ \href{https://github.com/tobiaslocker}{tobiaslocker}
+\end{center}
+:::
 
 ## About Me
-
 Software architect with experience across IoT, finance, and semiconductor domains.
 
 I value simplicity, clear reasoning, and tools that serve the problem, not the other way around.
