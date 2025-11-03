@@ -3,42 +3,49 @@ name: Build and Deploy CV
 on:
   push:
     branches:
-      - main  # trigger workflow on pushes to main branch
+      - main
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Install Pandoc and LaTeX (for PDF generation)
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y pandoc texlive-xetex texlive-fonts-extra
-        
-    - name: Convert Markdown to HTML
-      run: |
-        mkdir -p build
-        pandoc cv.md -o build/index.html --template=template.html --metadata-file=metadata.yaml
-    
-    - name: Convert Markdown to PDF
-      run: |
-        mkdir -p build
-        pandoc cv.md -o build/cv.pdf --template=template.tex --metadata-file=metadata.yaml --pdf-engine=xelatex
-      
-    - name: Copy styles
-      run: cp -r styles build/
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-extra
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
+      - name: Build HTML
+        run: |
+          mkdir -p build/html
+          pandoc cv.md \
+            --template=template.html \
+            --metadata-file=metadata.yaml \
+            -o build/html/index.html
 
-    - name: Upload PDF as artifact (optional)
-      uses: actions/upload-artifact@v5
-      with:
-        name: cv-pdf
-        path: build/cv.pdf
+      - name: Build PDF
+        run: |
+          mkdir -p build/pdf
+          pandoc cv.md \
+            --template=template.tex \
+            --metadata-file=metadata.yaml \
+            --pdf-engine=xelatex \
+            -o build/pdf/cv.pdf
+
+      - name: Copy styles for HTML
+        run: cp -r styles build/html/
+
+      - name: Deploy HTML to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/html
+
+      - name: Upload PDF as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdf
+          path: build/pdf/cv.pdf
