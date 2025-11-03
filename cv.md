@@ -8,6 +8,7 @@ header-includes:
 Software Architect · Senior Software Developer · Electrical Engineer
 
 <!-- HTML version -->
+```{=html}
 <div id="webaddress">
   <a href="mailto:tobias@tobiaslocker.de">
     <i class="far fa-envelope"></i> tobias@tobiaslocker.de
@@ -16,6 +17,7 @@ Software Architect · Senior Software Developer · Electrical Engineer
     <i class="fab fa-github"></i> tobiaslocker
   </a>
 </div>
+```
 
 <!-- LaTeX version -->
 ```{=latex}
