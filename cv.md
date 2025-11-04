@@ -23,6 +23,10 @@ scalable software.
 
 ---
 
+```{=latex}
+\clearpage
+```
+
 ## Education
 
 ### 2009–2014 — B. Eng., Electrical Engineering & IT
@@ -62,6 +66,9 @@ between backend computation and a responsive frontend, leveraging Python to orch
 numerical computations via a high-performance C library. Improved performance, scalability,
 and usability for portfolio analysis. The application remains actively used and maintained.
 
+```{=latex}
+\clearpage
+```
 
 ### 2017–2019 — Software Engineer
 
