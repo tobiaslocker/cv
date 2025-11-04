@@ -6,16 +6,16 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-\newcommand{\email}[1]{\href{mailto:#1}{\faEnvelope~#1}}
+\newcommand{\email}[1]{\href{mailto:#1}{\faEnvelope~\texttt{#1}}}  % Use \texttt to standardize the format
 \newcommand{\github}[1]{\href{https://github.com/#1}{\faGithub~#1}}
 
 \title{$title$}
 \begin{document}
 \maketitle
 
+% Email and GitHub links on the same line, ensuring proper separation
 \noindent
-\email{$email$}\kern 1em \github{$github$}
-
+\email{$email$}\hspace{1em}\github{$github$}
 
 $body$
 
