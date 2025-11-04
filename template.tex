@@ -1,30 +1,9 @@
 $passoptions.latex()$
 \documentclass{article}
-
-%\documentclass[
-%$for(babel-otherlangs)$
-%  $babel-otherlangs$,
-%$endfor$
-%$if(babel-lang)$
-%  $babel-lang$,
-%$endif$
-%$if(fontsize)$
-%  $fontsize$,
-%$endif$
-%$if(papersize)$
-%  $papersize$paper,
-%$endif$
-%$for(classoption)$
-%  $classoption$$sep$,
-%$endfor$
-%]{$documentclass$}
-
 \usepackage{xcolor}
 \usepackage{amsmath,amssymb}
 
-
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-
 
 
 $fonts.latex()$
@@ -35,19 +14,6 @@ $header-includes$
 $endfor$
 $after-header-includes.latex()$
 $hypersetup.latex()$
-$if(pdf-trailer-id)$
-
-\ifXeTeX
-\special{pdf:trailerid [ $pdf-trailer-id$ ]}
-\fi
-\ifPDFTeX
-\pdftrailerid{}
-\pdftrailer{/ID [ $pdf-trailer-id$ ]}
-\fi
-\ifLuaTeX
-\pdfvariable trailerid {[ $pdf-trailer-id$ ]}
-\fi
-$endif$
 
 $if(title)$
 \title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
