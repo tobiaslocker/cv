@@ -1,23 +1,20 @@
 \documentclass{article}
-% \usepackage{geometry}
-% \geometry{margin=1in}
 
 \usepackage{fontawesome5}
-% \usepackage{needspace}
 \usepackage{hyperref}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-\newcommand{\email}[1]{\faEnvelope~#1}
-\newcommand{\github}[1]{\faGithub~#1}
+\newcommand{\email}[1]{\href{mailto:#1}{\faEnvelope~#1}}
+\newcommand{\github}[1]{\href{https://github.com/#1}{\faGithub~#1}}
 
 \title{$title$}
 \begin{document}
 \maketitle
 
 \noindent
-\email{$email$} \\
+\email{$email$} \\%
 \github{$github$}
 
 $body$
