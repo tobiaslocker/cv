@@ -1,22 +1,168 @@
+$passoptions.latex()$
 \documentclass{article}
+
+%\documentclass[
+%$for(babel-otherlangs)$
+%  $babel-otherlangs$,
+%$endfor$
+%$if(babel-lang)$
+%  $babel-lang$,
+%$endif$
+%$if(fontsize)$
+%  $fontsize$,
+%$endif$
+%$if(papersize)$
+%  $papersize$paper,
+%$endif$
+%$for(classoption)$
+%  $classoption$$sep$,
+%$endfor$
+%]{$documentclass$}
+
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+
+
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+
+
+$fonts.latex()$
+$font-settings.latex()$
+$common.latex()$
+$for(header-includes)$
+$header-includes$
+$endfor$
+$after-header-includes.latex()$
+$hypersetup.latex()$
+$if(pdf-trailer-id)$
+
+\ifXeTeX
+\special{pdf:trailerid [ $pdf-trailer-id$ ]}
+\fi
+\ifPDFTeX
+\pdftrailerid{}
+\pdftrailer{/ID [ $pdf-trailer-id$ ]}
+\fi
+\ifLuaTeX
+\pdfvariable trailerid {[ $pdf-trailer-id$ ]}
+\fi
+$endif$
+
+$if(title)$
+\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+$endif$
+$if(subtitle)$
+
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{$subtitle$}
+$endif$
+
+
+\usepackage{etoolbox}
 
 \usepackage{fontawesome5}
 \usepackage{hyperref}
-
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-
-\newcommand{\email}[1]{\href{mailto:#1}{\faEnvelope~\texttt{#1}}}  % Use \texttt to standardize the format
+\newcommand{\email}[1]{\href{mailto:#1}{\faEnvelope~\texttt{#1}}}
 \newcommand{\github}[1]{\href{https://github.com/#1}{\faGithub~#1}}
 
-\title{$title$}
+\author{$for(author)$$author$$sep$ \and $endfor$
+  \small \email{$email$}\hspace{1em}\github{$github$}}
+\date{$date$}
+
+\usepackage{titling}
+\setlength{\droptitle}{-6em}
+
+
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{1.5em}{0.8em}
+\titlespacing*{\subsection}{0pt}{1.0em}{0.6em}
+\titlespacing*{\subsubsection}{0pt}{0.8em}{0.4em}
+
+
 \begin{document}
+\pagenumbering{gobble}
+
+$if(has-frontmatter)$
+\frontmatter
+$endif$
+$if(title)$
 \maketitle
 
-% Email and GitHub links on the same line, ensuring proper separation
-\noindent
-\email{$email$}\hspace{1em}\github{$github$}
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+$endif$
 
+% \noindent
+% \begin{center}
+%   \email{$email$}\hspace{2em}\github{$github$}
+% \end{center}
+
+$for(include-before)$
+$include-before$
+
+$endfor$
+$if(toc)$
+$if(toc-title)$
+\renewcommand*\contentsname{$toc-title$}
+$endif$
+{
+$if(colorlinks)$
+$if(toccolor)$
+\hypersetup{linkcolor=$toccolor$}
+$endif$
+$endif$
+\setcounter{tocdepth}{$toc-depth$}
+\tableofcontents
+}
+$endif$
+$if(lof)$
+\listoffigures
+$endif$
+$if(lot)$
+\listoftables
+$endif$
+$if(linestretch)$
+\setstretch{$linestretch$}
+$endif$
+$if(has-frontmatter)$
+\mainmatter
+$endif$
 $body$
 
+$if(has-frontmatter)$
+\backmatter
+$endif$
+$if(nocite-ids)$
+\nocite{$for(nocite-ids)$$it$$sep$, $endfor$}
+$endif$
+$if(natbib)$
+$if(bibliography)$
+$if(biblio-title)$
+$if(has-chapters)$
+\renewcommand\bibname{$biblio-title$}
+$else$
+\renewcommand\refname{$biblio-title$}
+$endif$
+$endif$
+\bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+
+$endif$
+$endif$
+$if(biblatex)$
+\printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
+
+$endif$
+$for(include-after)$
+$include-after$
+
+$endfor$
 \end{document}
