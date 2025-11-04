@@ -1,4 +1,5 @@
 ## About Me
+
 Software architect with experience across IoT, finance, and semiconductor domains.
 
 I value simplicity, clear reasoning, and tools that serve the problem, not the other way around.
