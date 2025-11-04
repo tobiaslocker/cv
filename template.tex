@@ -1,10 +1,7 @@
-$passoptions.latex()$
 \documentclass{article}
 \usepackage{xcolor}
 \usepackage{amsmath,amssymb}
-
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-
+\setcounter{secnumdepth}{-\maxdimen}
 
 $fonts.latex()$
 $font-settings.latex()$
@@ -15,24 +12,12 @@ $endfor$
 $after-header-includes.latex()$
 $hypersetup.latex()$
 
-$if(title)$
 \title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
-$endif$
-$if(subtitle)$
-
-\makeatletter
-\providecommand{\subtitle}[1]{% add subtitle to \maketitle
-  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
-}
-\makeatother
-\subtitle{$subtitle$}
-$endif$
-
 
 \usepackage{etoolbox}
-
 \usepackage{fontawesome5}
 \usepackage{hyperref}
+
 \newcommand{\email}[1]{\href{mailto:#1}{\faEnvelope~\texttt{#1}}}
 \newcommand{\github}[1]{\href{https://github.com/#1}{\faGithub~#1}}
 
@@ -43,65 +28,11 @@ $endif$
 \usepackage{titling}
 \setlength{\droptitle}{-6em}
 
-
-
-\usepackage{titlesec}
-\titlespacing*{\section}{0pt}{1.5em}{0.8em}
-\titlespacing*{\subsection}{0pt}{1.0em}{0.6em}
-\titlespacing*{\subsubsection}{0pt}{0.8em}{0.4em}
-
-
 \begin{document}
 \pagenumbering{gobble}
 
-$if(has-frontmatter)$
-\frontmatter
-$endif$
-$if(title)$
 \maketitle
 
-$if(abstract)$
-\begin{abstract}
-$abstract$
-\end{abstract}
-$endif$
-$endif$
-
-% \noindent
-% \begin{center}
-%   \email{$email$}\hspace{2em}\github{$github$}
-% \end{center}
-
-$for(include-before)$
-$include-before$
-
-$endfor$
-$if(toc)$
-$if(toc-title)$
-\renewcommand*\contentsname{$toc-title$}
-$endif$
-{
-$if(colorlinks)$
-$if(toccolor)$
-\hypersetup{linkcolor=$toccolor$}
-$endif$
-$endif$
-\setcounter{tocdepth}{$toc-depth$}
-\tableofcontents
-}
-$endif$
-$if(lof)$
-\listoffigures
-$endif$
-$if(lot)$
-\listoftables
-$endif$
-$if(linestretch)$
-\setstretch{$linestretch$}
-$endif$
-$if(has-frontmatter)$
-\mainmatter
-$endif$
 $body$
 
 $if(has-frontmatter)$
@@ -110,6 +41,7 @@ $endif$
 $if(nocite-ids)$
 \nocite{$for(nocite-ids)$$it$$sep$, $endfor$}
 $endif$
+
 $if(natbib)$
 $if(bibliography)$
 $if(biblio-title)$
@@ -123,6 +55,7 @@ $endif$
 
 $endif$
 $endif$
+
 $if(biblatex)$
 \printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
 
