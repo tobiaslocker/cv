@@ -10,8 +10,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+
+      - name: Checkout latest main
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Debug metadata
+        run: cat metadata.yaml
+
+      - name: Clean build folder
+        run: rm -rf build && mkdir -p build/html build/pdf
 
       - name: Install Pandoc and LaTeX
         run: |
