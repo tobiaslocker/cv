@@ -1,6 +1,3 @@
-# Tobias Locker
-Software Architect · Senior Software Developer · Electrical Engineer
-
 ## About Me
 Software architect with experience across IoT, finance, and semiconductor domains.
 
