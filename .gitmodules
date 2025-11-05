@@ -1,0 +1,3 @@
+[submodule "docframe"]
+	path = docframe
+	url = git@github.com:tobiaslocker/docframe.git
