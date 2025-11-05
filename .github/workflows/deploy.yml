@@ -33,7 +33,7 @@ jobs:
         run: |
           mkdir -p build/html
           pandoc cv.md \
-            --template=template.html \
+            --template=docframe/templates/default.html \
             --metadata-file=metadata.yaml \
             -o build/html/index.html
 
