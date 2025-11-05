@@ -41,7 +41,7 @@ jobs:
         run: |
           mkdir -p build/pdf
           pandoc cv.md \
-            --template=docframe/template/default.tex \
+            --template=docframe/templates/default.tex \
             --metadata-file=metadata.yaml \
             --pdf-engine=xelatex \
             -o build/pdf/cv.pdf
