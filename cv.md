@@ -114,6 +114,3 @@ practical understanding of electrical systems.
 ### 2000–2004 — Vocational Training as Electrician
 
 *Elektro Team Krause GmbH*, Bad Homburg, Germany
-
-Completed formal apprenticeship as an electrician, combining vocational education with
-hands-on training in electrical installation and maintenance.

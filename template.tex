@@ -20,11 +20,19 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{$title$}
 
 \usepackage{etoolbox}
 \usepackage{fontawesome5}
 \usepackage{hyperref}
+
+\makeatletter
+\providecommand{\subtitle}[1]{%
+  \apptocmd{\@title}{\par\vspace{0.75em}{\large\itshape #1\par}}{}{}
+}
+\makeatother
+
+\title{$title$}
+\subtitle{$subtitle$}
 
 \newcommand{\email}[1]{\href{mailto:#1}{\faEnvelope~\texttt{#1}}}
 \newcommand{\github}[1]{\href{https://github.com/#1}{\faGithub~#1}}
@@ -35,6 +43,9 @@
 
 \begin{document}
 \pagenumbering{gobble}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
 
 \maketitle
 
