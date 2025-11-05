@@ -3,16 +3,48 @@
 \usepackage{amsmath,amssymb}
 \setcounter{secnumdepth}{-\maxdimen}
 
-$fonts.latex()$
-$font-settings.latex()$
-$common.latex()$
-$for(header-includes)$
-$header-includes$
-$endfor$
-$after-header-includes.latex()$
-$hypersetup.latex()$
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Tobias Locker},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
 
-\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+\title{Tobias Locker}
 
 \usepackage{etoolbox}
 \usepackage{fontawesome5}
@@ -21,9 +53,9 @@ $hypersetup.latex()$
 \newcommand{\email}[1]{\href{mailto:#1}{\faEnvelope~\texttt{#1}}}
 \newcommand{\github}[1]{\href{https://github.com/#1}{\faGithub~#1}}
 
-\author{$for(author)$$author$$sep$ \and $endfor$
-  \small \email{$email$}\hspace{1em}\github{$github$}}
-\date{$date$}
+\author{
+  \small \email{tobias@tobiaslocker.de}\hspace{1em}\github{tobiaslocker}}
+\date{}
 
 \begin{document}
 \pagenumbering{gobble}
@@ -32,33 +64,6 @@ $hypersetup.latex()$
 
 $body$
 
-$if(has-frontmatter)$
-\backmatter
-$endif$
-$if(nocite-ids)$
-\nocite{$for(nocite-ids)$$it$$sep$, $endfor$}
-$endif$
 
-$if(natbib)$
-$if(bibliography)$
-$if(biblio-title)$
-$if(has-chapters)$
-\renewcommand\bibname{$biblio-title$}
-$else$
-\renewcommand\refname{$biblio-title$}
-$endif$
-$endif$
-\bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
 
-$endif$
-$endif$
-
-$if(biblatex)$
-\printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
-
-$endif$
-$for(include-after)$
-$include-after$
-
-$endfor$
 \end{document}
