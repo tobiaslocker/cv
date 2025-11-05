@@ -46,7 +46,7 @@ jobs:
             -o build/pdf/cv.pdf
 
       - name: Copy styles for HTML
-        run: cp -r styles build/html/
+        run: cp -r docframe/styles build/html/
 
       - name: Deploy HTML to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
