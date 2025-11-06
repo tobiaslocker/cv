@@ -2,61 +2,13 @@ name: Build and Deploy CV
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-latest
+    uses: tobiaslocker/docframe/build-workflow.yml@main
+    with:
+      md_file: cv.md
+      metadata_file: metadata.yaml
+      output_name: cv
 
-    steps:
-
-      - name: Checkout latest main
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 0
-          submodules: true
-
-      - name: Debug metadata
-        run: cat metadata.yaml
-
-      - name: Clean build folder
-        run: rm -rf build && mkdir -p build/html build/pdf
-
-      - name: Install Pandoc and LaTeX
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-extra
-
-      - name: Build HTML
-        run: |
-          mkdir -p build/html
-          pandoc cv.md \
-            --template=docframe/templates/default.html \
-            --metadata-file=metadata.yaml \
-            -o build/html/index.html
-
-      - name: Build PDF
-        run: |
-          mkdir -p build/pdf
-          pandoc cv.md \
-            --template=docframe/templates/default.tex \
-            --metadata-file=metadata.yaml \
-            --pdf-engine=xelatex \
-            -o build/pdf/cv.pdf
-
-      - name: Copy styles for HTML
-        run: cp -r docframe/styles build/html/
-
-      - name: Deploy HTML to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/html
-
-      - name: Upload PDF as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: cv-pdf
-          path: build/pdf/cv.pdf
