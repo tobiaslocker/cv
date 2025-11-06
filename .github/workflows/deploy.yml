@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-deploy:
-    uses: tobiaslocker/docframe/build-workflow.yml@main
+    uses: tobiaslocker/docframe/.github/workflows/default.yml@main
     with:
       md_file: cv.md
       metadata_file: metadata.yaml
