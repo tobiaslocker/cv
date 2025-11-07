@@ -1,7 +1,7 @@
 # Curriculum Vitae
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://tobiaslocker.github.io/cv/)
-[![PDF](https://img.shields.io/badge/PDF-Download-orange)](artifacts/cv.pdf)
+[![PDF](https://img.shields.io/badge/PDF-Download-orange)](https://github.com/tobiaslocker/cv/releases/latest/download/cv.pdf)
 
 This repository contains the **Markdown source** for my professional CV.  
 It is designed as a **single-source document** that can be rendered as:  
